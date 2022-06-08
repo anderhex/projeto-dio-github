@@ -11,6 +11,11 @@
             background: #e9f0fb;
         }
         
+         :root {
+            --azul: #2196f3;
+            --vermelho: #f44336;
+        }
+        
         .flex {
             max-width: 300px;
             padding: 10px;
@@ -20,7 +25,7 @@
         }
         
         .item {
-            background: #2196f3;
+            background: var(--azul);
             color: white;
             margin: 5px;
             padding: 10px;
@@ -29,11 +34,11 @@
         }
         
         .item:nth-child(5) {
-            background: linear-gradient(to right, #2196f3, #f44336);
+            background: linear-gradient(to right, var(--azul), var(--vermelho));
         }
         
         .out {
-            background: #f44336;
+            background: var(--vermelho);
             color: white;
         }
     </style>
